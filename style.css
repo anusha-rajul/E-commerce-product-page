@@ -1,0 +1,39 @@
+.btn-orange, .btn-orange:hover {
+    background-color: hsl(26,100%,55%);
+}
+.btn-close-js:hover {
+    cursor: pointer;
+}
+
+.active {
+    opacity: 70%;
+    border: 2px solid hsl(26, 100%, 35%);
+    scale:0.9;
+}
+
+.list-items {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left:-100%;
+    top: 0;
+    background-color: aliceblue;
+    z-index: 1000;
+    transition: 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.show-menu {
+    left: 0;
+}
+
+@media (min-width: 992px) {
+    .list-items {
+        position: static;
+        flex-direction: row;
+        left:0;
+        padding: 0;
+        background: none;
+    }
+}
