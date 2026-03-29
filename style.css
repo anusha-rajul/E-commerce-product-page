@@ -10,6 +10,9 @@
     border: 2px solid hsl(26, 100%, 35%);
     scale:0.9;
 }
+ul {
+    margin-bottom: 0;
+}
 
 .list-items {
     display: flex;
